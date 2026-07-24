@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>وزن‌های باز و رهبری هوش مصنوعی آمریکا</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.003/Vazirmatn-font-face.css">
+  <style>
+    :root{
+      --bg:#07101f;
+      --panel:#0f1a2d;
+      --panel2:#14213a;
+      --text:#f7f9fc;
+      --muted:#aeb9cb;
+      --blue:#5b8cff;
+      --cyan:#36d6b4;
+      --red:#ff7184;
+      --yellow:#ffd166;
+      --border:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Vazirmatn",Tahoma,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right,rgba(91,140,255,.18),transparent 30%),
+        radial-gradient(circle at 10% 35%,rgba(54,214,180,.10),transparent 24%),
+        var(--bg);
+      line-height:1.9;
+      font-feature-settings:"ss01";
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit}
+    .wrap{width:min(920px,calc(100% - 28px));margin:auto}
+    .hero{text-align:center;padding:54px 0 28px}
+    .badge{
+      display:inline-block;padding:7px 13px;border-radius:999px;
+      border:1px solid rgba(91,140,255,.3);
+      background:rgba(91,140,255,.12);color:#b9ceff;font-size:13px
+    }
+    h1{font-size:clamp(31px,7vw,56px);line-height:1.25;margin:18px 0 12px}
+    .lead{max-width:760px;margin:auto;color:var(--muted);font-size:18px}
+    .nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+    .nav a{
+      text-decoration:none;padding:11px 16px;border-radius:13px;
+      background:var(--blue);font-weight:bold
+    }
+    .nav a.secondary{background:transparent;border:1px solid var(--border)}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 40px}
+    .stat,.card,details,.verdict{
+      background:rgba(15,26,45,.94);
+      border:1px solid var(--border);
+      border-radius:18px;
+    }
+    .stat{padding:18px}
+    .stat strong{display:block;color:var(--cyan);font-size:23px}
+    .stat span{color:var(--muted);font-size:14px}
+    section{margin:0 0 42px}
+    h2{font-size:25px;margin:0 0 17px}
+    .note{color:var(--muted);font-size:13px;margin-top:-12px;margin-bottom:15px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+    .card{padding:19px}
+    .card h3{margin:0 0 7px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:15px}
+    .good h3{color:var(--cyan)}
+    .bad h3{color:var(--red)}
+    details{overflow:hidden;margin:10px 0}
+    summary{
+      cursor:pointer;list-style:none;padding:17px 18px;
+      font-weight:bold;display:flex;align-items:center;justify-content:space-between;
+      gap:12px
+    }
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"＋";font-size:21px;color:var(--cyan);flex:0 0 auto}
+    details[open] summary::after{content:"−"}
+    .inside{padding:0 18px 18px;color:#dce4f1}
+    .inside p{margin:0;color:var(--muted)}
+    .inside .tag{color:var(--cyan);font-size:13px;display:block;margin-bottom:5px}
+    .verdict{
+      padding:25px;
+      background:linear-gradient(135deg,rgba(91,140,255,.18),rgba(54,214,180,.08));
+      border-color:rgba(91,140,255,.28)
+    }
+    .verdict blockquote{margin:0;font-size:clamp(19px,4vw,28px);font-weight:bold}
+    .verdict p{margin:13px 0 0;color:var(--muted)}
+      .tweet-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      margin-top:16px;
+      padding:11px 15px;
+      border-radius:13px;
+      text-decoration:none;
+      background:#f7f9fc;
+      color:#07101f;
+      font-weight:700;
+    }
+    .tweet-link:hover{opacity:.9}
+    footer{text-align:center;color:var(--muted);font-size:13px;padding:5px 0 42px}
+    @media(max-width:680px){
+      .quick,.grid{grid-template-columns:1fr}
+      .hero{padding-top:40px}
+      .lead{font-size:16px}
+      summary{padding:16px}
+    }
+  
+    footer{
+      margin-top:54px;
+      padding:26px 0 34px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+    .footer-inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .footer-link{
+      color:var(--text);
+      font-weight:700;
+      text-decoration:none;
+      border-bottom:1px dashed rgba(255,255,255,.32);
+    }
+    .footer-link:hover{
+      color:var(--cyan);
+      border-bottom-color:var(--cyan);
+    }
+    .footer-sep{color:rgba(255,255,255,.28)}
+    @media(max-width:520px){
+      .footer-inner{flex-direction:column;gap:3px}
+      .footer-sep{display:none}
+    }
+
+  </style>
+</head>
+<body>
+  <header class="hero wrap">
+    <span class="badge">خلاصه ۳ دقیقه‌ای از اولین توییت مدیرعامل Nvidia</span>
+    <h1>آیا مدل‌های هوش مصنوعی باید باز باشند؟</h1>
+    <p class="lead">
+      مقاله «وزن‌های باز و رهبری هوش مصنوعی آمریکا» می‌گوید آینده هوش مصنوعی نباید فقط در اختیار چند شرکت بزرگ و API بسته باشد.
+    </p>
+    <a class="tweet-link"
+       href="https://x.com/jensenhuang/status/2080643682408321103?s=46"
+       target="_blank"
+       rel="noopener noreferrer">
+      مشاهده توییت Jensen Huang در X ↗
+    </a>
+    <nav class="nav">
+      <a href="#core">اصل حرف مقاله</a>
+      <a href="#verdict" class="secondary">جمع‌بندی نهایی</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="quick">
+      <div class="stat"><strong>۱ پیام اصلی</strong><span>مدل باز یعنی کنترل و انتخاب بیشتر</span></div>
+      <div class="stat"><strong>۴ مزیت مهم</strong><span>هزینه، رقابت، استقلال و امنیت</span></div>
+      <div class="stat"><strong>۱ هشدار</strong><span>مقاله کاملاً بی‌طرف نیست</span></div>
+    </section>
+
+    <section id="core">
+      <h2>اصل حرف مقاله در ۴ بخش</h2>
+      <p class="note">برای باز شدن هر بخش، روی عنوان آن بزنید.</p>
+
+      <details>
+        <summary>۱. دسترسی و کاهش هزینه</summary>
+        <div class="inside">
+          <span class="tag">هر کار به قوی‌ترین مدل جهان نیاز ندارد</span>
+          <p>کسب‌وکارها می‌توانند مدل کوچک‌تر و ارزان‌تر را روی زیرساخت خود اجرا کنند و فقط برای مسائل بسیار پیچیده سراغ مدل‌های بزرگ‌تر بروند.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>۲. رقابت و جلوگیری از انحصار</summary>
+        <div class="inside">
+          <span class="tag">فرصت برای بازیگران کوچک‌تر</span>
+          <p>مدل‌های باز رقابت را در تراشه، رایانش ابری، ابزارهای توسعه، اپلیکیشن‌ها و خدمات تخصصی افزایش می‌دهند.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>۳. کنترل داده و فرار از وابستگی</summary>
+        <div class="inside">
+          <span class="tag">داده و دانش سازمان دست خودش می‌ماند</span>
+          <p>شرکت مجبور نیست همیشه به یک API وابسته باشد؛ می‌تواند مدل را جابه‌جا، شخصی‌سازی و روی سرور خودش اجرا کند.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>۴. امنیت و شفافیت</summary>
+        <div class="inside">
+          <span class="tag">بسته‌بودن لزوماً مساوی امن‌بودن نیست</span>
+          <p>پژوهشگران بیشتری می‌توانند مدل باز را آزمایش و آسیب‌پذیری‌های آن را پیدا کنند؛ با این حال وزن منتشرشده قابل پس‌گرفتن نیست و امکان سوءاستفاده هم وجود دارد.</p>
+        </div>
+      </details>
+    </section>
+
+    <section>
+      <h2>چرا مقاله قانع‌کننده است؟</h2>
+      <div class="grid">
+        <article class="card good">
+          <h3>✓ نگاه اقتصادی</h3>
+          <p>فقط درباره رکوردهای فنی حرف نمی‌زند؛ درباره ورود AI به کارخانه، بیمارستان، دانشگاه و کسب‌وکار کوچک صحبت می‌کند.</p>
+        </article>
+        <article class="card good">
+          <h3>✓ نقد وابستگی</h3>
+          <p>افزایش قیمت، حذف مدل، محدودیت API یا قطع سرویس می‌تواند کل محصول یک شرکت را تهدید کند.</p>
+        </article>
+        <article class="card good">
+          <h3>✓ توجه به حاکمیت داده</h3>
+          <p>اجرای محلی برای سازمان‌های حساس، دولت‌ها، بانک‌ها و شرکت‌های دارای داده محرمانه اهمیت زیادی دارد.</p>
+        </article>
+        <article class="card good">
+          <h3>✓ دفاع از تنوع مدل‌ها</h3>
+          <p>برای هر وظیفه باید مدل مناسب همان کار را انتخاب کرد، نه اینکه همه‌چیز را به گران‌ترین مدل سپرد.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>کجای مقاله جای نقد دارد؟</h2>
+      <div class="grid">
+        <article class="card bad">
+          <h3>! ذی‌نفع بودن حامیان</h3>
+          <p>بسیاری از امضاکنندگان از فروش تراشه، سرویس ابری، مدل باز یا سرمایه‌گذاری در استارتاپ‌ها سود می‌برند.</p>
+        </article>
+        <article class="card bad">
+          <h3>! شواهد آماری کم</h3>
+          <p>ادعاهای مهمی درباره هزینه، امنیت و رقابت مطرح می‌شود، اما آمار و مطالعه موردی زیادی ارائه نشده است.</p>
+        </article>
+        <article class="card bad">
+          <h3>! ساده‌سازی خطرات</h3>
+          <p>سوءاستفاده سایبری، حذف محدودیت‌های ایمنی و تولید محتوای مخرب بسیار کوتاه بررسی شده‌اند.</p>
+        </article>
+        <article class="card bad">
+          <h3>! وزن باز، متن‌باز کامل نیست</h3>
+          <p>ممکن است وزن‌ها منتشر شوند، اما داده آموزشی، کد کامل یا مجوز آزاد در دسترس نباشد.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>سؤال‌های سریع</h2>
+      <details>
+        <summary>Open Weight دقیقاً یعنی چه؟</summary>
+        <div class="inside"><p>یعنی وزن‌های آموزش‌دیده مدل قابل دانلود است و می‌توان آن را روی زیرساخت خود اجرا یا شخصی‌سازی کرد. این اصطلاح لزوماً به معنای متن‌باز کامل نیست.</p></div>
+      </details>
+      <details>
+        <summary>آیا مدل باز همیشه امن‌تر است؟</summary>
+        <div class="inside"><p>نه. مزیت آن امکان بررسی گسترده‌تر است، اما وزن منتشرشده را نمی‌توان به‌سادگی پس گرفت و نسخه‌های تغییر‌یافته ممکن است محدودیت‌های ایمنی را حذف کنند.</p></div>
+      </details>
+      <details>
+        <summary>بهترین راهکار چیست؟</summary>
+        <div class="inside"><p>معماری ترکیبی: مدل‌های باز برای کنترل، هزینه و داده حساس؛ مدل‌های بسته برای توانایی‌های بسیار پیشرفته؛ همراه با ارزیابی و نظارت ایمنی.</p></div>
+      </details>
+    </section>
+
+    <section class="verdict" id="verdict">
+      <blockquote>نتیجه درست این نیست که همه مدل‌ها بدون محدودیت منتشر شوند؛ سیاست‌گذاری باید بر اساس توانایی و خطر واقعی هر مدل انجام شود.</blockquote>
+      <p>جمع‌بندی: مقاله دفاعی قدرتمند اما جهت‌دار از مدل‌های Open Weight است. آینده مناسب احتمالاً ترکیبی از رقابت، دسترسی باز، مجوز روشن و کنترل مدل‌های بسیار پرخطر خواهد بود.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>تهیه و تنظیم توسط</span>
+      <a class="footer-link"
+         href="https://linktr.ee/hamedshabanzadeh"
+         target="_blank"
+         rel="noopener noreferrer">حامد شعبان‌زاده</a>
+      <span class="footer-sep">|</span>
+      <span>با کمک ChatGPT</span>
+      <span class="footer-sep">|</span>
+      <span>© <span dir="ltr" lang="en">2026</span></span>
+    </div>
+  </footer>
+</body>
+</html>

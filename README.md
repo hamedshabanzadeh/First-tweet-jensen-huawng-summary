@@ -1,2 +1,28 @@
-# First-tweet-jensen-huawng-summary
-An interactive Persian summary of the “Open Weights and American AI Leadership” article, which was featured in Jensen Huang’s first tweet, designed as a lightweight, mobile-friendly HTML page for social media audiences.
+# 🤖 نگاهی به مقاله «وزن‌های باز و رهبری هوش مصنوعی آمریکا»
+
+یک صفحه تعاملی برای خلاصه، تحلیل و بررسی مقاله **Open Weights and American AI Leadership**؛ مقاله‌ای درباره نقش مدل‌های هوش مصنوعی با وزن‌های باز در آینده رقابت، امنیت و رهبری فناوری.
+
+این پروژه شامل:
+
+- 🧠 خلاصه ساده و دسته‌بندی‌شده مقاله
+- ⚡ مرور مهم‌ترین استدلال‌ها در چند دقیقه
+- 💰 بررسی تأثیر مدل‌های باز بر کاهش هزینه‌ها
+- 🏁 تحلیل نقش مدل‌های Open Weight در افزایش رقابت
+- 🔐 بررسی امنیت، شفافیت و کنترل داده‌ها
+- ⚠️ مرور نقاط ضعف و نقدهای واردشده به مقاله
+- 💬 پاسخ به پرسش‌های رایج درباره مدل‌های باز
+- 🔗 لینک مستقیم به توییت جنسن هوانگ
+
+## مشاهده آنلاین
+
+*https://hamedshabanzadeh.github.io/First-tweet-jensen-huawng-summary/*
+
+## توییت مرتبط
+
+[مشاهده توییت Jensen Huang در X](https://x.com/jensenhuang/status/2080643682408321103?s=46)
+
+## فایل‌های پروژه
+
+```text
+index.html
+README.md

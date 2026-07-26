@@ -102,7 +102,6 @@
       font-weight:700;
     }
     .tweet-link:hover{opacity:.9}
-    footer{text-align:center;color:var(--muted);font-size:13px;padding:5px 0 42px}
     @media(max-width:680px){
       .quick,.grid{grid-template-columns:1fr}
       .hero{padding-top:40px}
@@ -112,34 +111,21 @@
   
     footer{
       margin-top:54px;
-      padding:26px 0 34px;
-      border-top:1px solid var(--border);
-      color:var(--muted);
-      font-size:13px;
+      padding:32px 16px;
+      background-color:#0f172a;
+      color:#94a3b8;
+      border-top:1px solid #1e293b;
       text-align:center;
+      font-size:14px;
     }
-    .footer-inner{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:8px;
-    }
-    .footer-link{
-      color:var(--text);
+    footer p{margin:0}
+    footer a{
+      color:#67e8f9;
       font-weight:700;
       text-decoration:none;
-      border-bottom:1px dashed rgba(255,255,255,.32);
+      transition:color .2s ease;
     }
-    .footer-link:hover{
-      color:var(--cyan);
-      border-bottom-color:var(--cyan);
-    }
-    .footer-sep{color:rgba(255,255,255,.28)}
-    @media(max-width:520px){
-      .footer-inner{flex-direction:column;gap:3px}
-      .footer-sep{display:none}
-    }
+    footer a:hover{color:#fde047}
 
   </style>
 </head>
@@ -272,14 +258,16 @@
     </section>
   </main>
 
-   <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
-    <p>
-     تهیه شده توسط
-     <a class="font-bold text-cyan-300 hover:text-yellow-300 transition cursor-pointer" href="https://linktr.ee/hamed.shabanzadeh" rel="noopener noreferrer" target="_blank">
-      حامد شعبان‌زاده
-     </a>
-     با ابزار Chatgpt | ©2026
-    </p>
-   </footer>
+  <footer>
+    <div class="wrap">
+      <p>
+        تهیه شده توسط
+        <a href="https://linktr.ee/hamed.shabanzadeh" rel="noopener noreferrer" target="_blank">
+          حامد شعبان‌زاده
+        </a>
+        با ابزار ChatGPT | ©2026
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
